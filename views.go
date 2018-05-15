@@ -59,6 +59,7 @@ type PhysicalInterface struct {
 	Name                    string             `xml:"name"`
 	AdminStatus             string             `xml:"admin-status"`
 	OperStatus              string             `xml:"oper-status"`
+	Description             string             `xml:"description"`
 	LocalIndex              int                `xml:"local-index"`
 	SNMPIndex               int                `xml:"snmp-index"`
 	LinkLevelType           string             `xml:"link-level-type"`
