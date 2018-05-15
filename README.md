@@ -35,7 +35,7 @@ set security zones security-zone <xxx> interfaces <xxx> host-inbound-traffic sys
 
 ### Authentication Methods
 There are two different ways you can authenticate against to device. Standard username/password combination, or use SSH keys.
-There is an [AuthMethod][authmethod] struct which defines these methods that you will need to use in your code. Here is an example of 
+There is an [AuthMethod][authmethod] struct which defines these methods that you will need to use in your code. Here is an example of
 connecting to a device using only a username and password.
 
 ```Go
@@ -180,7 +180,7 @@ me a line on [Twitter](https://twitter.com/scottdware).
 
 **Example:** View the ARP table on a device
 ```Go
-views, err := jnpr.Views("arp")
+views, err := jnpr.View("arp")
 if err != nil {
     fmt.Println(err)
 }
